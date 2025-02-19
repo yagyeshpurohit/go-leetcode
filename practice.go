@@ -28,18 +28,6 @@ func rob(nums []int) int {
 	return 0
 }
 
-//https://leetcode.com/problems/3sum-closest/
-func threeSumClosest(nums []int, target int) int {
-
-	// [6, 1, 2, 5, -2, 4] tar:3
-	//sum := 0
-	for i := 0; i < len(nums); i++ {
-
-	}
-
-	return 0
-}
-
 //https://leetcode.com/problems/merge-two-sorted-lists/
 type ListNode struct {
 	Val  int
@@ -306,3 +294,14 @@ func stocksRecommendation(stockList []string) {
 	}
 
 }
+
+//func twoSum(nums []int, target int) []int {
+//	numIndexMap := make(map[int]int)
+//	for i, num := range nums {
+//		if j, ok := numIndexMap[num]; ok {
+//			return []int{j, i}
+//		}
+//		numIndexMap[num] = i
+//	}
+//	return []int{}
+//}
