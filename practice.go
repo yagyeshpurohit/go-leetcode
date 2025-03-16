@@ -295,6 +295,23 @@ func stocksRecommendation(stockList []string) {
 
 }
 
+//https://leetcode.com/problems/find-subarrays-with-equal-sum/
+func findSubarrays(nums []int) bool {
+	n := len(nums)
+	subsetSumMap := map[int]bool{}
+	for i, j := 0, 1; j < n; {
+		sum := nums[i] + nums[j]
+		if _, ok := subsetSumMap[sum]; ok {
+			return true
+		} else {
+			subsetSumMap[sum] = true
+		}
+		i++
+		j++
+	}
+	return false
+}
+
 //func twoSum(nums []int, target int) []int {
 //	numIndexMap := make(map[int]int)
 //	for i, num := range nums {
