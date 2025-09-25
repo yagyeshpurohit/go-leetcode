@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"leetcode/utils"
 )
 
@@ -48,9 +47,9 @@ func mincostTickets(days []int, costs []int) int {
 	return minTravelCost
 }
 
-func main() {
-	//days := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 30, 31}
-	days := []int{1, 4, 6, 7, 8, 20}
-	costs := []int{2, 7, 15}
-	fmt.Println(mincostTickets(days, costs))
-}
+//func main() {
+//	//days := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 30, 31}
+//	days := []int{1, 4, 6, 7, 8, 20}
+//	costs := []int{2, 7, 15}
+//	fmt.Println(mincostTickets(days, costs))
+//}

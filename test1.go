@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func findMaxHeightSum(maximumHeight []int) int {
 	//maximumHeight = [2,3,4,3]
 	heightFreqMap := make(map[int]bool)
@@ -29,8 +27,8 @@ func findMaxHeightSum(maximumHeight []int) int {
 	return sum
 }
 
-func main() {
-	maxHeightArr := []int{4, 4, 4}
-	ans := findMaxHeightSum(maxHeightArr)
-	fmt.Println(ans)
-}
+//func main() {
+//	maxHeightArr := []int{4, 4, 4}
+//	ans := findMaxHeightSum(maxHeightArr)
+//	fmt.Println(ans)
+//}

@@ -322,3 +322,8 @@ func findSubarrays(nums []int) bool {
 //	}
 //	return []int{}
 //}
+
+//https://leetcode.com/problems/last-stone-weight-ii/description/
+func lastStoneWeightII(stones []int) int {
+
+}

@@ -35,3 +35,22 @@ func MinPositive(arr []int) int {
 		return Min(positiveArr)
 	}
 }
+
+func Make2DMatrix(rows int, cols int) [][]int {
+	matrix := make([][]int, rows)
+	for i, _ := range matrix {
+		matrix[i] = make([]int, cols)
+	}
+	return matrix
+}
+
+func Make2DMatrixWithDefaultVal[T any](rows int, cols int, defaultVal T) [][]T {
+	matrix := make([][]T, rows)
+	for i, _ := range matrix {
+		matrix[i] = make([]T, cols)
+		for j, _ := range matrix[i] {
+			matrix[i][j] = defaultVal
+		}
+	}
+	return matrix
+}

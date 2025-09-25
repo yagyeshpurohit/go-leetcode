@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func climbStairs(n int) int {
 	var dp = make([]int, n+1)
 	ans := recurseClimbStairs(n, dp)
@@ -22,7 +20,7 @@ func recurseClimbStairs(n int, dp []int) int {
 	return dp[n]
 }
 
-func main() {
-	ans := climbStairs(5)
-	fmt.Println(ans)
-}
+//func main() {
+//	ans := climbStairs(5)
+//	fmt.Println(ans)
+//}
