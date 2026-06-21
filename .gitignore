@@ -1,2 +1,39 @@
+# ---- Go ----
+# Compiled binaries / executables
+/leetcode
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of `go tool cover`
+*.out
+coverage.*
+
+# Go workspace file
+go.work
+go.work.sum
+
+# Dependency directories (uncomment if you stop vendoring)
+# vendor/
+
+# ---- Python (decryptDoc.py virtual env) ----
+.venv/
+__pycache__/
+*.py[cod]
+
+# ---- IDE / Editor ----
+.idea/
+.vscode/
+*.swp
+
+# ---- OS ----
+.DS_Store
+Thumbs.db
+
+# Go vendor files
 vendor/
-.idea

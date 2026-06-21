@@ -11,7 +11,7 @@ import (
 
 var passPhrase = "8dW0if2M40nVP6L2474AsH2homh31K10Nix366i5"
 
-func GetDecryptedNumber(number string) string {
+func GetDecryptedDocumentNumber(number string) string {
 
 	if len(number) == 0 {
 		return ""
@@ -56,7 +56,7 @@ func CreateHash(key string) string {
 }
 
 func main() {
-	encryptedDLNo := "bNFJlOA8kg8+wXHSjAuBXnbkwhP/wNG0imLX1WcTj857IH6cYpCApzyY+sk="
-	dl := GetDecryptedNumber(encryptedDLNo)
+	encryptedDocumentNo := "P/5xonxP+p8Oh0uPWKJ7nd5KlWlE26vxzRpwvzYBazXWE35PQtGZoDbNnAQ="
+	dl := GetDecryptedDocumentNumber(encryptedDocumentNo)
 	fmt.Println(dl)
 }
